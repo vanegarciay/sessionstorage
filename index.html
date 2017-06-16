@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FontAwesome -->
+    <script src="https://use.fontawesome.com/b432f04897.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- main.css -->
+    <link rel="stylesheet" type="text/css" href="asstes/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="formulario">
+            <div class="row">
+                <div class="col-lg-12 datos">
+                    <div class="form-group">
+                        <label for="usr">Nombre:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 datos">
+                    <div class="form-group">
+                        <label for="usr">Clave:</label>
+                        <input type="text" class="form-control" id="clave">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="saveData()" value="Guardar datos">Guardar datos</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p id="data">Pulsa para ver tu nombre y tu password. </p>
+                    <button type="button" class="btn btn-primary" onclick="recoveryData()" value="Recuperar datos">Recuperar datos</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <button type="button" class="btn btn-primary" onclick="cleanData()" value="Recuperar datos">Limpiar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- CDN JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CDN Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="asstes/js/main.js"></script>
+</body>
+</html>
